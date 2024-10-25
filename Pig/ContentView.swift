@@ -30,7 +30,7 @@ struct ContentView: View {
                         .padding(50)
                     CustomText(text: "Turn Score: \(turnScore)")
                     HStack {
-                        Button("roll"){
+                        Button("Roll"){
                             chooseRandom(times: 3)
                             withAnimation(.interpolatingSpring(stiffness: 10, damping: 2)) {
                                 rotation += 360
@@ -130,9 +130,9 @@ struct InstructionView: View {
                     .padding()
                 Text("If a players rolls a pig, they score nothing and it is the next player's turn.")
                     .padding()
-                Text("If a player rols any other number, it is added to their turn total, and the player's turn continues.")
+                Text("If a player rolls any other number, it is added to their turn total, and the player's turn continues.")
                     .padding()
-                Text("If a player chooese to \"hold\", their turn total is added to the game score, and it become the next player's turn.")
+                Text("If a player chooses to \"hold\", their turn total is added to the game score, and it becomes the next player's turn.")
                     .padding()
                 Text("A player wins the game when the game score becomes 100 or more on their turn.")
                     .padding()
