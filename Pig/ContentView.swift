@@ -120,6 +120,12 @@ struct InstructionView: View {
         ZStack {
             Color.gray.opacity(0.7).ignoresSafeArea()
             VStack {
+                Image("Pig")
+                    .resizable()
+                    .frame(width: 150, height: 150)
+                Text("Pig")
+                    .font(Font.custom("Marker Felt", size: 48))
+                    .padding()
                 Text("In the game of Pig, players take individual turns. Each turn, a player repeatedly rolls a single die until either a pig is rolled or the player decides to \"hold\".")
                     .padding()
                 Text("If a players rolls a pig, they score nothing and it is the next player's turn.")
